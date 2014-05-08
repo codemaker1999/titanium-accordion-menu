@@ -1,7 +1,7 @@
 Titanium Accordion Menu
 ========================
 
-Implementation of an accordion menu for Titanium apps. Currently only tested on Android. This repo is a demo app, the only file you need to paste into your project is "lib/accordion.js".
+Implementation of an accordion menu for Titanium apps. Currently only tested on Android. This repo is a demo app, the only file you need to paste into your project is "app/lib/accordion.js".
 
 Usage
 ------
