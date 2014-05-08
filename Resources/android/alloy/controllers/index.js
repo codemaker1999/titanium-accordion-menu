@@ -176,14 +176,8 @@ function Controller() {
     for (var i = 0; msgs.length > i; i++) {
         var title = msgs[i][0];
         var text = msgs[i][1];
-        var header = makeLab(title, 16, "#111", "toggleLab");
-        header.applyProperties({
-            "class": "toggleLab"
-        });
-        var body = makeLab(text, 12, "#222", "lab");
-        body.applyProperties({
-            "class": "lab"
-        });
+        var header = makeLab(title, 16, "#111");
+        var body = makeLab(text, 12, "#222");
         var par = Titanium.UI.createView({
             width: "80%",
             height: Ti.UI.SIZE,
@@ -207,7 +201,7 @@ function Controller() {
     var accordion = require("accordion");
     var depth = -1;
     var startCollapsed = true;
-    accordion.setup($.lorem, foldCallback, depth, startCollapsed);
+    accordion.setup($.lorem, depth, startCollapsed, foldCallback);
     __defers["$.__views.__alloyId8!click!btn"] && $.__views.__alloyId8.addEventListener("click", btn);
     _.extend($, exports);
 }

@@ -31,7 +31,7 @@ function getHeight(elems) {
     return maxHeight;
 }
 
-function setup(root, cb, depth, collapse) {
+function setup(root, depth, collapse, cb) {
     foldables = treeSearch(root, depth);
     for (var i = 0; foldables.length > i; i++) {
         foldee = foldables[i];
