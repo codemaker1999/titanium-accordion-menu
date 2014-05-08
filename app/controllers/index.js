@@ -3,14 +3,13 @@
 
 // You can build accordion views from controllers
 
-function makeLab(text, size, col, cls){
+function makeLab(text, size, col){
   return Titanium.UI.createLabel({
     width:  "70%",
     height: Ti.UI.SIZE,
     text:   text,
     font:   { fontSize:size, },
     color:  col,
-    // classes:  [cls],
   });
 }
 
@@ -30,11 +29,11 @@ for (var i=0; i<msgs.length; i++){
   var text  = msgs[i][1];
 
   // First child of this will be the clickable item
-  var header = makeLab(title, 16, "#111", "toggleLab");
-  header.applyProperties({class:"toggleLab"})
+  var header = makeLab(title, 16, "#111");
+
   // rest of children are hidden on clicks
-  var body   = makeLab(text,  12, "#222", "lab");
-  body.applyProperties({class:"lab"})
+  var body   = makeLab(text,  12, "#222");
+
   // make parent
   var par = Titanium.UI.createView({
     width:       "80%",
