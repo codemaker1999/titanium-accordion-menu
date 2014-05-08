@@ -1,0 +1,27 @@
+<Alloy>
+	<Window id="win">
+		<Label class="lab">Accordion View Demo</Label>
+		<ScrollView id="lorem" class="fold">
+			<View class="spacer" />
+			<Label class="lab">Manual XML markup Example</Label>
+			<View class="spacer" />
+			<View id="manual" accordion="true">
+				<Label class="toggleLab">^ Click here to toggle</Label>
+				<Label class="lab">We will test some random views here</Label>
+				<ImageView id="img" />
+				<TextArea id="textarea" />
+				<!-- Try nesting these menus -->
+				<!-- Recursively resizing nested menus not currently supported -->
+				<View id="nested" accordion="true">
+					<Label class="toggleLab">^ NESTED HEADING</Label>
+					<Label class="lab">NESTED BODY VIEW</Label>
+				</View>
+				<Button onClick="btn">Clicky</Button>
+			</View>
+			<View class="spacer" />
+			<Label class="lab">Lorem Ipsum (lipsum.com)</Label>
+			<View class="spacer" />
+			<!-- Things are added here programatically in index.js -->
+		</ScrollView>
+	</Window>
+</Alloy>

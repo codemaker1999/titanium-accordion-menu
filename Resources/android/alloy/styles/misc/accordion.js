@@ -1,0 +1,1 @@
+module.exports = [{"isClass":true,"priority":10000.0001,"key":"accordion","style":{layout:"vertical",height:Ti.UI.SIZE,}},{"isId":true,"priority":100000.0004,"key":"tab","style":{width:"80%",height:"80%",backgroundColor:"#eef",layout:"vertical",}}];

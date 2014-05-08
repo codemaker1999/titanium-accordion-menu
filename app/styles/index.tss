@@ -1,0 +1,67 @@
+//////////////////////////////////////////////
+// IDs
+"#win": {
+	backgroundColor:"green",
+	layout:"vertical",
+},
+"#manual":{
+	height: Ti.UI.SIZE,
+	width: "80%",
+	borderWidth: 2,
+	borderColor: "yellow",
+},
+"#nested":{
+	height: Ti.UI.SIZE,
+	width: "75%",
+	backgroundColor: "#fafcfe",
+	borderWidth: 1,
+	borderColor: "yellow",
+},
+"#lorem":{
+	height: Ti.UI.SIZE,
+	width: "90%",
+},
+"#textarea":{
+	borderWidth:"2",
+	borderColor:"#bbb",
+	borderRadius:"5",
+	color:"#888",
+	textAlign:"left",
+	hintText:"Enter info...",
+	width:"75%",
+	height:"70",
+},
+
+//////////////////////////////////////////////
+// classes
+".lab": {
+	width: "75%",
+	height: Ti.UI.SIZE,
+	color: "#000",
+	backgroundColor: "red",
+},
+".fold":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout:"vertical",
+	backgroundColor: "blue",
+},
+".toggleLab":{
+	width: "75%",
+	height: Ti.UI.SIZE,
+	color: "#120",
+	backgroundColor: "purple",
+},
+".spacer":{
+	height: 10,
+	width:  1,
+},
+
+//////////////////////////////////////////////
+// view name
+"ImageView":{
+	width:"80%",
+},
+"ScrollView":{
+	height: Ti.UI.SIZE,
+},
