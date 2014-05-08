@@ -26,7 +26,13 @@ Usage
 	var accordion = require("accordion");
 	```
 
-4. Run the module:
+4. Initialize your view
+
+	```js
+	$.window.open();
+	```
+	
+5. Run the module:
 
 	```js
 	var depth          = -1;      // no max tree search depth
