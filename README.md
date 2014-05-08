@@ -12,7 +12,7 @@ Usage
 	<View id="myView" accordion="true"> ... </View>
 	```
 
-OR..
+	OR...
 
 	```js
 	var view = Titanium.UI.createView( {accordion: "true", id: "myView"} );
