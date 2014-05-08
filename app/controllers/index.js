@@ -103,4 +103,4 @@ var depth = -1 // no max depth
 var startCollapsed = true;
 
 // automatically add all event handlers and sizing logic to the defined elements
-accordion.setup($.lorem, foldCallback, depth, startCollapsed);
+accordion.setup($.lorem, depth, startCollapsed, foldCallback);

@@ -63,7 +63,7 @@ function getHeight(elems) {
 };
 
 // initiate the module
-function setup(root, cb, depth, collapse) {
+function setup(root, depth, collapse, cb) {
   // root is the root of Alloy tags to check for accordian="true"
   // cb is a callback to run when click events are fired on the menu
   // depth is the depth of the view tree to search
