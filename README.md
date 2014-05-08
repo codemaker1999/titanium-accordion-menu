@@ -29,8 +29,9 @@ Usage
 4. Run the module:
 
 	```js
-	var depth          = -1;   // no max tree search depth
-	var startCollapsed = true; // initial accordion state is collapsed   
+	var depth          = -1;      // no max tree search depth
+	var startCollapsed = true;    // initial accordion state is collapsed
+	var root           = $.window // this can be element that is a parent of the $.myView
 	function callback (containerView) {}; // called when an accordion menu is toggled
-	accordion.setup($.myView, depth, startCollapsed, callback);
+	accordion.setup(root, depth, startCollapsed, callback);
 	```
