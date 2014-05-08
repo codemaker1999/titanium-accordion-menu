@@ -8,29 +8,29 @@ Usage
 
 1. Create a container view for the menu items, and set the attribute "accordion" to "true":
 
-```
-\<View id="myView" accordion="true"\> ... \</View\>
-```
+	```xml
+	<View id="myView" accordion="true"> ... </View>
+	```
 
 OR..
 
-```
-var view = Titanium.UI.createView( {accordion: "true", id: "myView"} );
-```
+	```js
+	var view = Titanium.UI.createView( {accordion: "true", id: "myView"} );
+	```
 
 2. Add elements to the container. The first child element will be assigned the click event handler, and the rest of the children will be hidden when the accordion is collapsed.
 
 3. Import the module:
 
-```
-var accordion = require("accordion");
-```
+	```js
+	var accordion = require("accordion");
+	```
 
 4. Run the module:
 
-```
-var depth          = -1;   // no max tree search depth
-var startCollapsed = true; // initial accordion state is collapsed   
-function callback (containerView) {}; // called when an accordion menu is toggled
-accordion.setup($.myView, depth, startCollapsed, callback);
-```
+	```js
+	var depth          = -1;   // no max tree search depth
+	var startCollapsed = true; // initial accordion state is collapsed   
+	function callback (containerView) {}; // called when an accordion menu is toggled
+	accordion.setup($.myView, depth, startCollapsed, callback);
+	```
